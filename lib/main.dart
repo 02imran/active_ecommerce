@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:text_project/config/app_route.dart';
 import 'package:text_project/config/theme.dart';
-import 'package:text_project/screens/screens.dart';
+
+import 'leader_board.dart';
+
 
 
 void main() {
@@ -18,9 +19,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: theme(),
-      onGenerateRoute: AppRoute.onGenerateRoute,
-      initialRoute: HomeScreen.routeName,
-      
+      // onGenerateRoute: AppRoute.onGenerateRoute,
+      // initialRoute: HomeScreen.routeName,
+      home: const LeaderBoard(),
     );
   }
 }
